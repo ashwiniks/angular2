@@ -29,6 +29,7 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     HomeComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -36,7 +37,7 @@ const appRoutes: Routes = [
     HttpModule,
  RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+ providers: [GetdataService]
   bootstrap: [AppComponent]
 })
 export class AppModule { }
